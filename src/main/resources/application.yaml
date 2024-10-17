@@ -1,0 +1,32 @@
+server:
+  port: 8001
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+spring:
+  application:
+    name : config
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: file:C:/ohseokju/java_work/cloud-project
+#         git:
+#           uri: https://github.com/oksw2024/spring-cloud-pj-config
+#           default-label: main
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    shutdown:
+      enabled: true
