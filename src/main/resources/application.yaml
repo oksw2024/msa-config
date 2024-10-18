@@ -1,13 +1,6 @@
 server:
   port: 8001
 
-eureka:
-  client:
-    fetch-registry: true
-    register-with-eureka: true
-    service-url:
-      defaultZone: http://localhost:8761/eureka
-
 spring:
   application:
     name : config
@@ -32,6 +25,7 @@ spring:
             MRptebmjEAJp82Prc93CPYFDmpWVZ1PelQ==
             -----END EC PRIVATE KEY-----
           passphrase: ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBA+0kxXgnHg8C4yWAZtUojurBPeGCTpFo+7y02FE8RNWKsEET7BRMTEabXm5oxACafNj63Pdwj2BQ5qVlWdT3pU= admin@205-
+
 
 management:
   endpoints:
